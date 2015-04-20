@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Inspirational Quotes</title>
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+
+    <header class="main-header">
+
+        <h2 class="container">Inspirational List of Inspirational Quotes</h2>
+    </header>
+
+    <div class="content container">
+
+      <section class="quotes-display">
+      </section>
+
+      <section class="quote-entry">
+        <form class="add-quote form-group">
+            <legend>Add a New Quote that Inspires You</legend>
+            <p>
+              <label>Quote</label>
+              <input type="text" id="quote-text" class="add-info form-control" placeholder="Add Quote Text" required>
+            </p>
+            <p>
+              <label>Author</label>
+              <input type="text" id="author-text" class="form-control" placeholder="Author's Name" required>
+            </p>
+            <p>
+              <label>Choose a rating:</label>
+              <span class="star-rating">
+                <input type="radio" name="rating" value="option1"><i class="fa fa-star-o"></i>
+                <input type="radio" name="rating" value="option2"><i class="fa fa-star-o"></i>
+                <input type="radio" name="rating" value="option3"><i class="fa fa-star-o"></i>
+                <input type="radio" name="rating" value="option4"><i class="fa fa-star-o"></i>
+                <input type="radio" name="rating" value="option5"><i class="fa fa-star-o"></i>
+              </span>
+            </p>
+            <p>
+              <button class="btn" type="submit" id="form-submit">Save</button>
+            </p> 
+        </form>
+      </section>
+
+      <footer>
+      </footer>
+
+    </div>
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>
