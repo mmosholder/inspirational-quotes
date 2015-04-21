@@ -3,7 +3,7 @@
 }
 .main-header {
 	padding: 20px 15px;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 5px solid #bedb39;
 	margin-bottom: 10px;
 }
 .quote-entry {
@@ -13,6 +13,41 @@
 }
 .btn {
 	color: #fff;
-	background-color: #C2520E;
+	background-color: #FF6138;
 	float: right;
 }
+#templates {
+	display: none;
+}
+#quotes-tpl {
+
+}
+#quotes-container {
+	margin-bottom: 25px;
+}
+.quote-block {
+/*	border-bottom: 5px solid #79BD8F; */
+	padding: 10px;
+	margin-bottom: 15px;
+	position: relative;
+}
+.fa-quote-left,
+.fa-quote-right {
+	font-size: 30px;
+	display: inline-block;
+	padding: 0 5px;
+	color: rgba(51, 51, 51, .7);
+}
+.quote-text {
+	font-size: 20px;
+	display: inline;
+	padding: 0 10px;
+}
+.author-name {
+	margin: 10px 0 0px 60px;
+	font-size: 16px;
+}
+.author-name:before {
+	content: "- ";
+}
+
