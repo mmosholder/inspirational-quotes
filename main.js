@@ -2,7 +2,8 @@ $(document).on('ready', function(){
 
     // Star ranking display functionality
     $(':radio').change(function () {
-        var starRating = $('.choice').text( this.value + ' stars' );
+        $('.choice').text( this.value + ' stars' );
+        var starRating = this.value;
         
         console.log(starRating);
         return starRating;
