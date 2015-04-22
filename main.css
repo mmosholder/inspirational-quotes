@@ -15,6 +15,7 @@
 	color: #fff;
 	background-color: #FF6138;
 	float: right;
+    font-weight: 700;
 }
 #templates {
 	display: none;
@@ -26,10 +27,10 @@
 	margin-bottom: 25px;
 }
 .quote-block {
-/*	border-bottom: 5px solid #79BD8F; */
+	border-bottom: 5px solid #af6ecc; 
 	padding: 10px;
-	margin-bottom: 15px;
-	position: relative;
+	margin: 15px 10px;
+    display: inline-block;
 }
 .fa-quote-left,
 .fa-quote-right {
@@ -44,13 +45,23 @@
 	padding: 0 10px;
 }
 .author-name {
-	margin: 10px 0 0px 60px;
+	text-align: center;
 	font-size: 16px;
+    display: block;
+    color: #999;
 }
 .author-name:before {
 	content: "- ";
 }
-/**************************************************************************STAR RATING CSS*****************************************************************************************/
+.rated {
+    font-size: 16px;
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+}
+/**************STAR RATING CSS************
+******************************************
+*****************************************/
 .star-rating {
   font-size: 0;
   white-space: nowrap;
