@@ -1,8 +1,17 @@
 $(document).on('ready', function(){
 
-	var Quote = function(text, author) {
+    // Star ranking display functionality
+    $(':radio').change(function () {
+        var starRating = $('.choice').text( this.value + ' stars' );
+        
+        console.log(starRating);
+        return starRating;
+    });
+
+	var Quote = function(text, author, rating) {
 		this.text = text;
 		this.author = author;
+        this.rating = rating;
 
 		this.render();
 	};
@@ -27,8 +36,8 @@ $(document).on('ready', function(){
 		this.render();
 	};
 
-	QuoteLibrary.prototype.addQuote = function(tempQuote) {
-		this.quotes.push(tempQuote);
+	QuoteLibrary.prototype.addQuote = function(quote) {
+		this.quotes.push(quote);
 
 		this.renderQuoteList();
 
@@ -44,7 +53,7 @@ $(document).on('ready', function(){
 
 		this.renderQuoteList();
 
-		return this.el();
+		return this.el;
 	};
 
 	QuoteLibrary.prototype.renderQuoteList = function () {
@@ -55,6 +64,9 @@ $(document).on('ready', function(){
 		this.el.find('.quote-list').append(quoteElements);
 	};
 
+    //Initialize new library on load for housing quotes
+    var quotesLibrary = new QuoteLibrary();
+
 
 	$('.add-quote').on('submit', function (e){
 		var quoteText = $('#quote-text').val();
@@ -64,7 +76,9 @@ $(document).on('ready', function(){
 
 		e.preventDefault();
 
-		$('#quotes-container').append( tempQuote.render() );
+        quotesLibrary.addQuote(tempQuote);
+
+		$('.quote-entry').before( quotesLibrary.render() );
 
 	});
 });

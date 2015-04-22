@@ -32,11 +32,9 @@
 
         <!-- Library of quotes template -->
         <div id="library-tpl">
-          <div class="quote-list"></div>
+          <div class="quote-list">
+          </div>
         </div>
-      </section>
-
-      <section id="quotes-container">
       </section>
 
       <section class="quote-entry">
@@ -51,17 +49,17 @@
               <input type="text" id="author-text" class="form-control" placeholder="Author's Name" required>
             </p>
             <p>
-              <label>Choose a rating:</label>
+              <label class="choice">Choose a star rating:</label>
               <span class="star-rating">
-                <input type="radio" name="rating" value="option1"><i class="fa fa-star-o"></i>
-                <input type="radio" name="rating" value="option2"><i class="fa fa-star-o"></i>
-                <input type="radio" name="rating" value="option3"><i class="fa fa-star-o"></i>
-                <input type="radio" name="rating" value="option4"><i class="fa fa-star-o"></i>
-                <input type="radio" name="rating" value="option5"><i class="fa fa-star-o"></i>
+                <input type="radio" name="rating" value="1"><i></i>
+                <input type="radio" name="rating" value="2"><i></i>
+                <input type="radio" name="rating" value="3"><i></i>
+                <input type="radio" name="rating" value="4"><i></i>
+                <input type="radio" name="rating" value="5"><i></i>
               </span>
             </p>
             <p>
-              <button class="btn" type="submit" id="form-submit">Save</button>
+              <button class="btn" type="submit" id="form-submit">Put it on the list!</button>
             </p> 
         </form>
       </section>
