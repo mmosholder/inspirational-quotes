@@ -6,31 +6,49 @@
 	border-bottom: 5px solid #bedb39;
 	margin-bottom: 10px;
 }
+ul {
+    padding-left: 0;
+    list-style: none;
+}
 .quote-entry {
 	border: 1px solid #ddd;
 	padding: 15px;
 	overflow: hidden;
 }
-.btn {
+.form-btn {
 	color: #fff;
 	background-color: #FF6138;
 	float: right;
     font-weight: 700;
+    font-size: 16px;
+}
+.form-btn:hover {
+    background-color: #c64c2d;
 }
 #templates {
 	display: none;
 }
-#quotes-tpl {
 
-}
 #quotes-container {
 	margin-bottom: 25px;
 }
-.quote-block {
-	border-bottom: 5px solid #af6ecc; 
+.quote-block { 
 	padding: 10px;
 	margin: 15px 10px;
     display: inline-block;
+    max-width: 100%;
+}
+.block-border-purple {
+    border-bottom: 5px solid #af6ecc;
+}
+.block-border-green {
+    border-bottom: 5px solid #5ddd85;    
+}
+.block-border-blue {
+    border-bottom: 5px solid #02c8ff;
+}
+.block-border-yellow {
+    border-bottom: 5px solid #ffe526;
 }
 .fa-quote-left,
 .fa-quote-right {
@@ -41,8 +59,9 @@
 }
 .quote-text {
 	font-size: 20px;
-	display: inline;
+	display: inline-block;
 	padding: 0 10px;
+    max-width: 92%;
 }
 .author-name {
 	text-align: center;
@@ -53,11 +72,35 @@
 .author-name:before {
 	content: "- ";
 }
-.rated {
+.rated,
+.remove {
     font-size: 16px;
     display: block;
     margin: 10px 0;
     text-align: center;
+}
+
+.dismiss-text {
+    display: block;
+    float: right;
+    font-size: 10px;
+    margin-right: -10px;
+    margin-top: 10px;
+    color: #82025b;
+}
+.main-footer {
+    height: 50px;
+}
+.show-all {
+    width: 100%;
+    text-align: right;
+    margin: 8px 0;
+    font-size: 16px;
+    color: #82025b;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px #999
+    text-decoration: underline;
+    display: none;
 }
 /**************STAR RATING CSS************
 ******************************************

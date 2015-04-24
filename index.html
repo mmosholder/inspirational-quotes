@@ -10,63 +10,66 @@
     <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body>
-
     <header class="main-header">
-
         <h2 class="container">Inspirational List of Inspirational Quotes</h2>
     </header>
 
     <div class="content container">
 
-      <section id="templates">
+      <div id="templates">
 
-        <!-- Individual Quote Container -->
-        <div id="quote-tpl">
+                <!-- Library of quotes template , plus form-->
+        <div id="library-tpl">
+          <ul class="quote-list"></ul>
+          <a href="#" class="show-all">View All Quotes</a>
+          <div class="quote-entry">
+            <form class="add-quote-form form-group">
+                <legend>Add a New Quote that Inspires You</legend>
+                <p>
+                  <label>Quote</label>
+                  <input type="text" id="quote-text" class="add-info form-control" name="quote-data" placeholder="Add Quote Text" required>
+                </p>
+                <p>
+                  <label>Author</label>
+                  <input type="text" id="author-text" class="form-control" name="author-data" placeholder="Author's Name" required>
+                </p>
+                <p>
+                  <button class="btn form-btn" type="submit" id="form-submit">Put it on the list!</button>
+                </p> 
+            </form>
+          </div>
+        </div><!--End library template-->
+
+        <!-- Individual Quote Container Template-->
+        <li id="quote-tpl">
           <div class="quotes-box">
-            <i class="fa fa-quote-left"></i>
-            <span class="quote-text">Quote Text</span>
-            <i class="fa fa-quote-right"></i>
+            <div>
+              <i class="fa fa-quote-left"></i>
+              <span class="quote-text">Quote Text</span>
+              <i class="fa fa-quote-right"></i>
+            </div>
           </div>
           <em><a href="#" class="author-name">Author Name</a></em>
           <div class="rated">
             <label class="choice">Choose a star rating:</label>
             <form>
-                <span class="star-rating">
-                  <input type="radio" name="rating" value="1"><i></i>
-                  <input type="radio" name="rating" value="2"><i></i>
-                  <input type="radio" name="rating" value="3"><i></i>
-                  <input type="radio" name="rating" value="4"><i></i>
-                  <input type="radio" name="rating" value="5"><i></i>
-                </span>
-              </form>
-            </div>
+              <span class="star-rating">
+                <input type="radio" name="rating" value="1"><i></i>
+                <input type="radio" name="rating" value="2"><i></i>
+                <input type="radio" name="rating" value="3"><i></i>
+                <input type="radio" name="rating" value="4"><i></i>
+                <input type="radio" name="rating" value="5"><i></i>
+              </span>
+            </form>
+            <a href="#" class="dismiss-text">No longer inspiring?</a>
+          </div>    
+        </li>
+
         </div>
 
-        <!-- Library of quotes template -->
-        <div id="library-tpl">
-          <div class="quote-list">
-          </div>
-        </div>
-      </section>
+      </div><!-- End Templates -->
 
-      <section class="quote-entry">
-        <form class="add-quote form-group">
-            <legend>Add a New Quote that Inspires You</legend>
-            <p>
-              <label>Quote</label>
-              <input type="text" id="quote-text" class="add-info form-control" placeholder="Add Quote Text" required>
-            </p>
-            <p>
-              <label>Author</label>
-              <input type="text" id="author-text" class="form-control" placeholder="Author's Name" required>
-            </p>
-            <p>
-              <button class="btn" type="submit" id="form-submit">Put it on the list!</button>
-            </p> 
-        </form>
-      </section>
-
-      <footer>
+      <footer class="main-footer">
       </footer>
 
     </div>
